@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UNIVERSAL GYM — BY BANGLAWALA GROUP</title>
+  <meta name="description" content="UNIVERSAL GYM — professional gym website with working subscription and interactive UI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="UNIVERSAL GYM">
+        <span class="brand-mark" aria-hidden="true">UG</span>
+        <span class="brand-name">
+          <span class="brand-top">UNIVERSAL</span>
+          <span class="brand-bottom">GYM</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <button class="nav-link" type="button" data-scroll="#about">About</button>
+        <button class="nav-link" type="button" data-scroll="#programs">Programs</button>
+        <button class="nav-link" type="button" data-scroll="#trainers">Trainers</button>
+        <button class="nav-link" type="button" data-scroll="#gallery">Gallery</button>
+        <button class="nav-link" type="button" data-scroll="#plans">Plans</button>
+        <button class="nav-link" type="button" data-scroll="#faq">FAQ</button>
+        <button class="nav-link nav-cta" type="button" data-open-modal="#subscribeModal" data-set-plan="monthly">Subscribe</button>
+      </nav>
+
+      <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false" data-mobile-menu>
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav-wrap" id="mobileNav" hidden>
+      <div class="container">
+        <nav class="mobile-nav" aria-label="Mobile Primary">
+          <button class="nav-link" type="button" data-scroll="#about" data-mobile-close>About</button>
+          <button class="nav-link" type="button" data-scroll="#programs" data-mobile-close>Programs</button>
+          <button class="nav-link" type="button" data-scroll="#trainers" data-mobile-close>Trainers</button>
+          <button class="nav-link" type="button" data-scroll="#gallery" data-mobile-close>Gallery</button>
+          <button class="nav-link" type="button" data-scroll="#plans" data-mobile-close>Plans</button>
+          <button class="nav-link" type="button" data-scroll="#faq" data-mobile-close>FAQ</button>
+          <button class="nav-link nav-cta" type="button" data-open-modal="#subscribeModal" data-set-plan="monthly" data-mobile-close>Subscribe</button>
+          <div class="mobile-nav-foot">
+            <div class="chip"><span class="dot dot-green" aria-hidden="true"></span> Open 5:00 AM - 11:00 PM</div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="kicker">
+            <span class="kicker-pill">UNIVERSAL GYM</span>
+            <span class="kicker-sub">Strength • Fitness • Confidence</span>
+          </div>
+<h1 class="hero-title">Train smarter, live healthier.</h1>
+          <p class="byline">UNIVERSAL GYM <span class="byline-sep">•</span> BY BANGLAWALA GROUP</p>
+<p class="hero-desc">Get a clear training plan with expert coaches. Subscribe instantly and start your journey.</p>
+          <p class="byline small">BY BANGLAWALA GROUP</p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" data-open-modal="#subscribeModal" data-set-plan="trial">Book a Free Trial</button>
+            <button class="btn btn-ghost" type="button" data-open-modal="#coachModal" data-set-coach-action="hire" aria-label="Hire a Coach">Hire a Coach</button>
+            <button class="btn btn-ghost" type="button" data-open-modal="#coachModal" data-set-coach-action="prebook" aria-label="Pre-Book Membership">Pre-Book Membership</button>
+
+            <button class="btn btn-ghost" type="button" data-scroll="#plans">View Plans</button>
+          </div>
+
+
+          <div class="badges" role="list">
+            <div class="badge" role="listitem"><span class="badge-icon">⚡</span><div><strong>Certified Trainers</strong><span>Coaching that keeps you consistent</span></div></div>
+            <div class="badge" role="listitem"><span class="badge-icon">🏋️</span><div><strong>Modern Equipment</strong><span>Comfort & safety</span></div></div>
+            <div class="badge" role="listitem"><span class="badge-icon">🤝</span><div><strong>Community Energy</strong><span>Motivation daily</span></div></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="visual-card">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="meter">
+              <div class="meter-label">Today’s Momentum</div>
+              <div class="meter-bar"><span class="meter-fill"></span></div>
+<div class="meter-stats" aria-label="Today\u2019s gym stats">
+                <div class="stat-pill"><strong>12</strong><span>Classes</span></div>
+                <div class="stat-pill"><strong>8</strong><span>Trainers</span></div>
+                <div class="stat-pill"><strong>4.9</strong><span>Rating</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-shine"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">About UNIVERSAL GYM</h2>
+          <p class="section-sub">Technique-first coaching and structured training paths for real progress.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <h3 class="card-title">Your Journey, Our Plan</h3>
+            <p class="card-text">We create training paths for fat loss, muscle gain, endurance and wellness.</p>
+            <ul class="checklist">
+              <li>✅ Assessment + goal mapping</li>
+              <li>✅ Technique-first coaching</li>
+              <li>✅ Progress tracking</li>
+            </ul>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat reveal"><strong class="stat-num">10+</strong><span class="stat-label">Years of coaching</span></div>
+            <div class="stat reveal"><strong class="stat-num">30+</strong><span class="stat-label">Weekly sessions</span></div>
+            <div class="stat reveal"><strong class="stat-num">5:00</strong><span class="stat-label">AM early batches</span></div>
+            <div class="stat reveal"><strong class="stat-num">11:00</strong><span class="stat-label">PM late batches</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="programs">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Programs & Classes</h2>
+          <p class="section-sub">Pick a track that matches your lifestyle. Every session is guided and progress-driven.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="flip-card reveal">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="tag tag-primary">Strength</span>
+                <h3 class="card-title">Power & Build</h3>
+                <p class="card-text">Barbell strength + muscle development.</p>
+              </div>
+              <div class="flip-back">
+                <ul class="mini-list"><li>✓ 3x/week</li><li>✓ Technique coaching</li><li>✓ Progressive overload</li></ul>
+                <div class="card-actions"><button class="btn btn-primary btn-sm" type="button" data-open-modal="#subscribeModal" data-set-plan="build">Join</button></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="tag tag-cyan">Fat Loss</span>
+                <h3 class="card-title">Burn & Tone</h3>
+                <p class="card-text">Cardio circuits + core-focused training.</p>
+              </div>
+              <div class="flip-back">
+                <ul class="mini-list"><li>✓ 4x/week options</li><li>✓ Coach-led intensity</li><li>✓ Mobility included</li></ul>
+                <div class="card-actions"><button class="btn btn-primary btn-sm" type="button" data-open-modal="#subscribeModal" data-set-plan="burn">Join</button></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="tag tag-green">Athletic</span>
+                <h3 class="card-title">Core & Conditioning</h3>
+                <p class="card-text">Posture, stability and functional strength.</p>
+              </div>
+              <div class="flip-back">
+                <ul class="mini-list"><li>✓ 2x/week base</li><li>✓ Core stability</li><li>✓ Functional training</li></ul>
+                <div class="card-actions"><button class="btn btn-primary btn-sm" type="button" data-open-modal="#subscribeModal" data-set-plan="core">Join</button></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card reveal">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="tag tag-purple">Wellness</span>
+                <h3 class="card-title">Mobility & Stretch</h3>
+                <p class="card-text">Flexibility and recovery techniques.</p>
+              </div>
+              <div class="flip-back">
+                <ul class="mini-list"><li>✓ Daily mobility plans</li><li>✓ Stretch routines</li><li>✓ Better recovery</li></ul>
+                <div class="card-actions"><button class="btn btn-primary btn-sm" type="button" data-open-modal="#subscribeModal" data-set-plan="mobility">Join</button></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-row reveal">
+          <div class="cta-row-inner">
+            <div>
+              <h3 class="cta-title">Not sure where to start?</h3>
+              <p class="cta-desc">Book a free trial and get an assessment from our trainers.</p>
+            </div>
+            <button class="btn btn-ghost" type="button" data-open-modal="#subscribeModal" data-set-plan="trial">Get Free Trial</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trainers">
+    
+      
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Meet Our Trainers</h2>
+          <p class="section-sub">Coaches who focus on form, consistency, and results.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal"><div class="avatar">A</div><h3 class="card-title">Amaan Banglawala</h3><p class="muted">Strength & Technique</p><div class="pill-row"><span class="pill">Powerlifting</span><span class="pill">Form</span></div></article>
+          <article class="team-card reveal"><div class="avatar avatar-2">U</div><h3 class="card-title">Uvesh Banglawala</h3><p class="muted">Fat Loss & Conditioning</p><div class="pill-row"><span class="pill">HIIT</span><span class="pill">Core</span></div></article>
+          <article class="team-card reveal"><div class="avatar avatar-3">J</div><h3 class="card-title">Juned banglawala</h3><p class="muted">Athletic Conditioning</p><div class="pill-row"><span class="pill">Conditioning</span><span class="pill">Mobility</span></div></article>
+          <article class="team-card reveal"><div class="avatar avatar-4">S</div><h3 class="card-title">Sahal Banglawala</h3><p class="muted">Recovery & Wellness</p><div class="pill-row"><span class="pill">Recovery</span><span class="pill">Flexibility</span></div></article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Gallery</h2>
+          <p class="section-sub">Demo tiles (no external images). Click to open lightbox.</p>
+        </div>
+
+        <div class="gallery-grid reveal" aria-label="Gym gallery">
+          <button class="gallery-item" type="button" data-gallery="1" aria-label="Open Strength Zone"><span class="gallery-bg g1"></span><span class="gallery-caption">Strength Zone</span></button>
+          <button class="gallery-item" type="button" data-gallery="2" aria-label="Open Cardio Flow"><span class="gallery-bg g2"></span><span class="gallery-caption">Cardio Flow</span></button>
+          <button class="gallery-item" type="button" data-gallery="3" aria-label="Open Free Weights"><span class="gallery-bg g3"></span><span class="gallery-caption">Free Weights</span></button>
+          <button class="gallery-item" type="button" data-gallery="4" aria-label="Open Functional Training"><span class="gallery-bg g4"></span><span class="gallery-caption">Functional Training</span></button>
+          <button class="gallery-item" type="button" data-gallery="5" aria-label="Open Stretch & Recover"><span class="gallery-bg g5"></span><span class="gallery-caption">Stretch & Recover</span></button>
+          <button class="gallery-item" type="button" data-gallery="6" aria-label="Open Community Energy"><span class="gallery-bg g6"></span><span class="gallery-caption">Community Energy</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Membership Plans</h2>
+          <p class="section-sub">Subscribe instantly (stored locally in your browser for this demo).</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <div class="price-head"><div class="price-name">Free Trial</div><div class="price-sub">Perfect to start</div></div>
+            <div class="price-mid"><div class="price-amount" data-price="trial">₹0</div><div class="price-term">Assessment + 1 session</div></div>
+            <ul class="price-features"><li>Trainer assessment</li><li>Equipment orientation</li><li>Personal plan guidance</li></ul>
+            <div class="price-actions"><button class="btn btn-primary" type="button" data-open-modal="#subscribeModal" data-set-plan="trial">Subscribe</button></div>
+          </article>
+
+          <article class="price-card price-card-best reveal">
+            <div class="price-badge">Most Popular</div>
+            <div class="price-head"><div class="price-name">Monthly Active</div><div class="price-sub">Best for consistent training</div></div>
+            <div class="price-mid"><div class="price-amount" data-price="monthly">₹2499</div><div class="price-term">per month</div></div>
+            <ul class="price-features"><li>Unlimited gym access</li><li>2 group class credits</li><li>Progress check-in</li></ul>
+            <div class="price-actions"><button class="btn btn-primary" type="button" data-open-modal="#subscribeModal" data-set-plan="monthly">Subscribe</button></div>
+          </article>
+
+          <article class="price-card reveal">
+            <div class="price-head"><div class="price-name">Quarterly Pro</div><div class="price-sub">For serious transformation</div></div>
+            <div class="price-mid"><div class="price-amount" data-price="quarterly">₹6999</div><div class="price-term">for 3 months</div></div>
+            <ul class="price-features"><li>Unlimited gym access</li><li>Monthly class credits</li><li>Enhanced progress plan</li></ul>
+            <div class="price-actions"><button class="btn btn-primary" type="button" data-open-modal="#subscribeModal" data-set-plan="quarterly">Subscribe</button></div>
+          </article>
+
+          <article class="price-card reveal">
+            <div class="price-head"><div class="price-name">Yearly Elite</div><div class="price-sub">Long-term excellence</div></div>
+            <div class="price-mid"><div class="price-amount" data-price="yearly">₹24999</div><div class="price-term">for 12 months</div></div>
+            <ul class="price-features"><li>Unlimited gym access</li><li>Weekly progress check</li><li>Priority class schedule</li></ul>
+            <div class="price-actions"><button class="btn btn-primary" type="button" data-open-modal="#subscribeModal" data-set-plan="yearly">Subscribe</button></div>
+          </article>
+        </div>
+
+        <div class="plan-foot reveal">
+          <div class="plan-foot-note"><span class="shield" aria-hidden="true">🛡️</span> Secure subscription request — demo stores locally.</div>
+          <button class="btn btn-ghost" type="button" data-scroll="#contact">Questions? Contact us</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-head reveal"><h2 class="section-title">FAQ</h2><p class="section-sub">Click to expand answers.</p></div>
+        <div class="faq-grid">
+          <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq1">What should I bring for the free trial?</button><div class="faq-a" id="faq1" hidden>Water bottle, sports wear, and your workout goals. We’ll guide you from the first session.</div></div>
+          <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq2">Is the subscription refundable?</button><div class="faq-a" id="faq2" hidden>Refund policies vary by plan. This demo stores your request locally; connect backend for real policy.</div></div>
+          <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq3">Can beginners join?</button><div class="faq-a" id="faq3" hidden>Yes. Coaches focus on form, safety, and progression so beginners feel confident quickly.</div></div>
+          <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq4">Do you provide meal plans?</button><div class="faq-a" id="faq4" hidden>We provide goal-focused nutrition guidance. For complete meal plans, request coaching sessions.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal"><h2 class="section-title">Contact Us</h2><p class="section-sub">This form is fully working in demo mode (saved locally).</p></div>
+
+        <div class="contact-grid">
+          <form class="form-card reveal" id="contactForm" novalidate>
+            <div class="form-title">Send a message</div>
+            <div class="form-grid">
+              <label class="field"><span class="label">Full Name</span><input class="input" name="name" type="text" autocomplete="name" required minlength="2" /></label>
+              <label class="field"><span class="label">Phone</span><input class="input" name="phone" type="tel" required minlength="10" maxlength="13" /></label>
+              <label class="field"><span class="label">Email</span><input class="input" name="email" type="email" required /></label>
+              <label class="field"><span class="label">Topic</span><select class="select" name="topic" required><option value="" selected disabled>Select topic</option><option>Free Trial</option><option>Membership</option><option>Classes</option><option>Coaching</option><option>Other</option></select></label>
+              <label class="field full"><span class="label">Message</span><textarea class="textarea" name="message" required minlength="10"></textarea></label>
+            </div>
+            <div class="modal-actions">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <span class="modal-note">Demo submission stored locally.</span>
+            </div>
+            <div class="alert" id="contactAlert" role="status" aria-live="polite"></div>
+          </form>
+
+          <div class="info-card reveal">
+            <div class="info-block"><div class="info-k">Address</div><div class="info-v">UNIVERSAL GYM, Your City, India</div></div>
+            <div class="info-block"><div class="info-k">Phone</div><div class="info-v">+91 90000 00000</div></div>
+            <div class="info-block"><div class="info-k">Hours</div><div class="info-v">5:00 AM - 11:00 PM</div></div>
+          <div class="info-block"><div class="info-k">Email</div><div class="info-v">uvesh_15@yahoo.co.in</div></div>
+
+            <div class="info-cta"><button class="btn btn-ghost" type="button" data-open-modal="#subscribeModal" data-set-plan="monthly">Join Now</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand"><span class="brand-mark small" aria-hidden="true">UG</span><div><div class="footer-name">UNIVERSAL GYM</div><div class="footer-tag">Train stronger. Live healthier.</div></div></div>
+          <p class="footer-text">© <span id="year"></span> UNIVERSAL GYM. All rights reserved.</p>
+          <div class="made-by">Website Created by <span class="made-by-name">SAHAL BANGLAWALA</span></div>
+
+        </div>
+        <div>
+          <div class="footer-title">Newsletter</div>
+          <form class="newsletter" id="newsletterForm" novalidate>
+            <input class="input" name="newsletterEmail" type="email" placeholder="Your email" required />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <div class="alert" id="newsletterAlert" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Subscribe Modal -->
+  <div class="modal" id="subscribeModal" hidden role="dialog" aria-modal="true" aria-labelledby="subscribeTitle">
+    <div class="modal-overlay" data-close-modal tabindex="-1" aria-hidden="true"></div>
+    <div class="modal-panel" role="document">
+      <div class="modal-head">
+        <div>
+          <h3 class="modal-title" id="subscribeTitle">Subscribe to a plan</h3>
+          <p class="modal-sub">Fill your details. This demo saves your request in your browser.</p>
+        </div>
+        <button class="modal-close" type="button" aria-label="Close" data-close-modal>✕</button>
+      </div>
+
+      <div class="modal-body">
+        <form class="form-grid" id="subscribeForm" novalidate>
+          <input type="hidden" name="plan" id="planInput" value="monthly" />
+
+          <label class="field"><span class="label">Full Name</span><input class="input" name="name" type="text" required minlength="2" autocomplete="name" /></label>
+          <label class="field"><span class="label">Phone</span><input class="input" name="phone" type="tel" required minlength="10" maxlength="13" autocomplete="tel" /></label>
+          <label class="field"><span class="label">Email</span><input class="input" name="email" type="email" required autocomplete="email" /></label>
+          <label class="field"><span class="label">Preferred Batch</span>
+            <select class="select" name="batch" required>
+              <option value="5:00 AM">5:00 AM</option>
+              <option value="6:30 AM">6:30 AM</option>
+              <option value="7:30 PM">7:30 PM</option>
+              <option value="9:00 PM">9:00 PM</option>
+            </select>
+          </label>
+
+          <label class="field full"><span class="label">Your Goal</span><select class="select" name="goal" required>
+            <option value="Fat Loss">Fat Loss</option>
+            <option value="Muscle Gain">Muscle Gain</option>
+            <option value="Strength">Strength</option>
+            <option value="Endurance">Endurance</option>
+            <option value="Wellness">Wellness</option>
+          </select></label>
+
+          <div class="field full">
+            <div class="label">Total Amount</div>
+            <div class="price-summary">
+              <div class="summary-row"><span>Plan</span><strong id="summaryPlan">Monthly Active</strong></div>
+              <div class="summary-row"><span>Amount</span><strong id="summaryAmount">₹2499</strong></div>
+              <div class="summary-row"><span>Duration</span><strong id="summaryDuration">per month</strong></div>
+            </div>
+            <div class="help">You can replace local demo storage with real payment later.</div>
+          </div>
+
+          <div class="modal-actions full">
+            <button class="btn btn-primary" type="submit">Confirm Subscription</button>
+            <span class="modal-note">All buttons are functional.</span>
+          </div>
+          <div class="alert" id="subscribeAlert" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hire a Coach / Pre-Book Modal -->
+  <div class="modal" id="coachModal" hidden role="dialog" aria-modal="true" aria-labelledby="coachModalTitle">
+
+    <div class="modal-overlay" data-close-modal tabindex="-1" aria-hidden="true"></div>
+    <div class="modal-panel" role="document">
+      <div class="modal-head">
+        <div>
+          <h3 class="modal-title" id="coachModalTitle">Hire a Coach</h3>
+          <p class="modal-sub" id="coachModalSub">Tell us your details. We’ll save your request locally in this demo.</p>
+        </div>
+        <button class="modal-close" type="button" aria-label="Close" data-close-modal>✕</button>
+      </div>
+
+      <div class="modal-body">
+        <form class="form-grid" id="coachForm" novalidate>
+          <input type="hidden" id="coachAction" name="coachAction" value="hire" />
+
+          <label class="field"><span class="label">Name</span><input class="input" name="name" type="text" required minlength="2" autocomplete="name" /></label>
+          <label class="field"><span class="label">Phone Number</span><input class="input" name="phone" type="tel" required minlength="10" maxlength="13" autocomplete="tel" /></label>
+
+          <label class="field full" id="coachGoalWrap"><span class="label">Fitness Goal</span>
+            <select class="select" name="goal" required>
+              <option value="Fat Loss">Fat Loss</option>
+              <option value="Muscle Gain">Muscle Gain</option>
+              <option value="Strength">Strength</option>
+              <option value="Endurance">Endurance</option>
+              <option value="Wellness">Wellness</option>
+            </select>
+          </label>
+
+          <label class="field full" id="coachTimeWrap"><span class="label">Preferred Training Time</span>
+            <select class="select" name="preferredTime" required>
+              <option value="5:00 AM">5:00 AM</option>
+              <option value="6:30 AM">6:30 AM</option>
+              <option value="7:30 PM">7:30 PM</option>
+              <option value="9:00 PM">9:00 PM</option>
+            </select>
+          </label>
+
+          <label class="field full" id="prePlanWrap" hidden><span class="label">Membership Plan</span>
+            <select class="select" name="plan" required>
+              <option value="monthly">Monthly Active</option>
+              <option value="quarterly">Quarterly Pro</option>
+              <option value="yearly">Yearly Elite</option>
+            </select>
+          </label>
+
+          <label class="field full" id="preDateWrap" hidden><span class="label">Preferred Joining Date</span>
+            <input class="input" type="date" name="joinDate" required />
+          </label>
+
+          <div class="modal-actions full">
+            <button class="btn btn-primary" type="submit">Confirm</button>
+            <span class="modal-note">Form is fully functional in demo mode.</span>
+          </div>
+          <div class="alert" id="coachAlert" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="modal" id="galleryModal" hidden role="dialog" aria-modal="true" aria-labelledby="galleryTitle">
+
+    <div class="modal-overlay" data-close-modal tabindex="-1" aria-hidden="true"></div>
+    <div class="modal-panel modal-panel--gallery" role="document">
+      <div class="modal-head">
+        <div>
+          <h3 class="modal-title" id="galleryTitle">Gallery</h3>
+          <p class="modal-sub" id="gallerySub">—</p>
+        </div>
+        <button class="modal-close" type="button" aria-label="Close" data-close-modal>✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="lightbox" aria-label="Gallery image preview">
+          <div class="lightbox-tile" id="lightboxTile" aria-hidden="true"></div>
+          <div class="lightbox-controls">
+            <button class="btn btn-ghost" type="button" id="galleryPrev">← Prev</button>
+            <button class="btn btn-ghost" type="button" id="galleryNext">Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
